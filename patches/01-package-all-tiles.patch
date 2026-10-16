@@ -1,0 +1,22 @@
+diff --git a/uwp/CMakeLists.txt b/uwp/CMakeLists.txt
+index 586692e15..ac357626c 100644
+--- a/uwp/CMakeLists.txt
++++ b/uwp/CMakeLists.txt
+@@ -44,14 +44,9 @@ set_source_files_properties(${BIN_DEPS} PROPERTIES
+     VS_DEPLOYMENT_LOCATION "."
+ )
+ 
+-set(PKG_ASSETS
+-    Assets/LockScreenLogo.scale-200.png
+-    Assets/Square44x44Logo.targetsize-24_altform-unplated.png
+-    Assets/Square44x44Logo.scale-200.png
+-    Assets/Square150x150Logo.scale-200.png
+-    Assets/StoreLogo.png
+-    Assets/Wide310x150Logo.scale-200.png
+-)
++# Decompilaciones (2026-10-02): todos los PNG de Assets\, también los mosaicos del usuario con su versión base y la
++# pantalla de carga (identidad-visual.py --aplicar-a, desde pm_empaquetar.ps1).
++file(GLOB PKG_ASSETS RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "${CMAKE_CURRENT_SOURCE_DIR}/Assets/*.png")
+ set_source_files_properties(${PKG_ASSETS} PROPERTIES
+     VS_DEPLOYMENT_CONTENT TRUE
+     VS_DEPLOYMENT_LOCATION "Assets"
