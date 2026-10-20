@@ -11,6 +11,6 @@
 | CMake | The one that ships with Visual Studio is fine |
 | Python 3 | Any 3.8+, standard library only, for the tile generation |
 | PowerShell | The **5.1** that Windows ships. PowerShell 7 is not needed; the examples carry `-ExecutionPolicy Bypass` because a stock Windows is `Restricted` |
-| An Xbox Series | In **Developer Mode**, with a user signed in, and the `Microsoft.VCLibs.140.00` x64 appx installed with the package |
+| An Xbox Series X | In **Developer Mode**, with a user signed in, and the `Microsoft.VCLibs.140.00` x64 appx installed with the package |
 
 ⚠ The branch matters more than the version here: `uwp-xbox` is the branch with the UWP target. The project also has a clang-cl toolchain that aborts CMake's own compiler probe, and a `vcvars` that repoints `VCPKG_ROOT` at Visual Studio's vcpkg — `compilar-nativo.cmd` handles both.

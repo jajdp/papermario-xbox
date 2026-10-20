@@ -12,6 +12,16 @@ nuestra y decir claramente que la otra no lo es.
 
 No es una teoría: corrió la intro con DirectX 11 en una Xbox Series X el 2026-10-02, con el archivo o2r de la versión de escritorio en su carpeta de datos.
 
+## En qué consola se probó
+
+**En una Xbox Series X**, en modo desarrollador. Las dos consolas en las que se construyó y se probó esto
+son Series X, así que es el único hardware al que se refiere cualquier cosa que se afirme aquí.
+
+**En una Series S no se ha probado nunca, ni una vez.** Es otra máquina: menos memoria disponible para un
+juego y una GPU más floja. Puede que funcione en una, puede que vaya más despacio, o puede que no
+arranque; nada de aquí se ha medido en ella. Si lo ejecutas en una Series S, lo que obtengas no es lo que
+dice este README, y ninguna de las cifras de aquí es una promesa sobre esa consola.
+
 ## Qué hay aquí
 
 | | |
