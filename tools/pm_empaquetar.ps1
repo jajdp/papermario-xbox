@@ -82,8 +82,8 @@ $salida = "<tree>$Version"
 # AppxPackageValidationEnabled=false: la validación del paquete de MSBuild (target _ValidateAppxPackage) exige imágenes de
 # 200 KB como máximo (APPX3207, regla de la Tienda) y el arte del usuario a 1240x600 pesa más de 1 MB. Ni
 # AppxValidateAppxManifest=false ni SkipAppxManifestValidation=true la apagan: es otro target. La consola en modo
-# desarrollador no tiene ese límite: Melee, empaquetado con makeappx, lleva una pantalla de carga de 1,27 MB y se ve
-# (2026-10-01).
+# desarrollador no tiene ese límite: un paquete armado con makeappx acepta una pantalla de carga de
+# 1,27 MB y se ve bien (comprobado el 2026-10-01).
 & $msbuild (Join-Path $Arbol "build-uwp\PaperBoat-UWP.vcxproj") `
   /p:Configuration=Release /p:Platform=x64 `
   /p:AppxBundle=Always /p:AppxBundlePlatforms=x64 `
