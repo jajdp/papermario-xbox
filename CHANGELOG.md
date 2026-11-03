@@ -2,6 +2,19 @@
 
 All notable changes to this recipe. Dates are `YYYY-MM-DD`.
 
+## 1.0.5 — 2026-11-03
+
+### Changed
+
+- **Passages that introduced a fact as "the same as in the other port" now state the fact.** They
+  named no repository, so there was nothing for the reader to go and look up, and the fact itself
+  went unsaid. Two comments in `tools/pm_empaquetar.ps1` introduced the changes to the original flow
+  as the ones made in other ports of ours.
+
+  Still said, because the reader can act on it: everything that is **not** ours — the upstream
+  project, the third-party forks, the files taken under their own license — and the sentences that
+  place this port among others without naming any, which stand on their own.
+
 ## 1.0.4 — 2026-11-03
 
 ### Changed

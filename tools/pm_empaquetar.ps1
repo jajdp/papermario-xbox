@@ -6,7 +6,7 @@
   Segunda mitad del build-uwp.yml de JRickey/PaperBoat: con la DLL nativa ya compilada (compilar-nativo.cmd, clang-cl de
   LLVM 19.1.7), se configura el envoltorio WinRT de uwp\ y se empaqueta con MSBuild.
 
-  Cambios respecto al flujo original, los mismos que en los demás ports propios del proyecto:
+  Cambios respecto al flujo original:
    - identidad propia (Decompilaciones-PaperMario) y editor CN=Decompilaciones, el certificado del proyecto que ya está en
      Cert:\CurrentUser\My, en vez del autofirmado CN=JRickey que genera el CI;
    - nombre visible «Paper Mario Decomp» (RN-12, identidad-visual.xlsx);
@@ -71,7 +71,7 @@ if ($cmakeNuevo -eq $cmakeOriginal) { throw "el CMakeLists.txt original cambió:
 [IO.File]::WriteAllText($cmakeUwp, $cmakeNuevo + "`n", (New-Object Text.UTF8Encoding $false))
 Write-Host "  CMakeLists.txt de uwp\: Assets\*.png al paquete"
 
-# 1c. El arte del usuario en los mosaicos (Display Images del subproyecto), como en los demás ports propios
+# 1c. El arte del usuario en los mosaicos (Display Images del subproyecto)
 $identidad = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot "..\..\..\..\herramientas\identidad-visual.py"))
 & py -3.13 -X utf8 $identidad --aplicar-a "Paper Mario" $manifiesto
 if ($LASTEXITCODE -ne 0) { throw "falló identidad-visual.py --aplicar-a" }
