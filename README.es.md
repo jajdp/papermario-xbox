@@ -59,6 +59,15 @@ Estas son las cosas que costaron tiempo, y ninguna está en el README del autor:
 
 ## Créditos y licencia
 
+**Casi nada de lo que hace que esto funcione es nuestro.** Este repositorio es una receta que une el trabajo de otros; sin cualquiera de estas piezas no habría port.
+
+| Qué hace | Quién lo hizo | Licencia |
+|---|---|---|
+| **[PaperBoat](https://github.com/JRickey/PaperBoat)** — el port a PC de *Paper Mario*, **incluido su trabajo de UWP** | **JRickey** | CC0-1.0 |
+
+**La receta de empaquetado, las herramientas y esta documentación** son de **Recompilaciones**.
+
+
 El port es de **JRickey/PaperBoat**, bajo CC0-1.0. La receta de empaquetado, las herramientas y esta
 documentación son de **Recompilaciones**, bajo la [licencia MIT](LICENSE).
 

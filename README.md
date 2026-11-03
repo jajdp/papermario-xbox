@@ -59,6 +59,15 @@ These are the things that cost time, and none of them is in the author's README:
 
 ## Credits and license
 
+**Almost none of what makes this work is ours.** This repository is a recipe that glues together other people's work; without any one of these pieces there would be no port at all.
+
+| What it does | Who made it | License |
+|---|---|---|
+| **[PaperBoat](https://github.com/JRickey/PaperBoat)** — the *Paper Mario* PC port, **including its UWP work** | **JRickey** | CC0-1.0 |
+
+**The packaging recipe, the tooling and this documentation** are by **Recompilaciones**.
+
+
 The port is **JRickey/PaperBoat**'s, under CC0-1.0. The packaging recipe, the tooling and this
 documentation are by **Recompilaciones**, under the [MIT License](LICENSE).
 
