@@ -21,11 +21,15 @@
 [CmdletBinding()]
 param(
   [string]$Version = "1.0.2.0",
-  [string]$Arbol = "<tree>",
+  [string]$Arbol = "",
   [string]$Huella = $null   # CN=Decompilaciones
 )
 
 $ErrorActionPreference = 'Stop'
+if (-not $Arbol) {
+  throw 'falta -Arbol: la raiz del arbol del juego, la que tiene build-windows-uwp\ y uwp\'
+}
+if (-not (Test-Path -LiteralPath $Arbol)) { throw "no existe el arbol: $Arbol" }
 $cmake = "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe"
 $msbuild = "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe"
 
@@ -78,7 +82,7 @@ Write-Host "=== 2. configurar el envoltorio WinRT (version $Version) ==="
 if ($LASTEXITCODE -ne 0) { throw "falló el configure del envoltorio" }
 
 Write-Host "=== 3. empaquetar y firmar ==="
-$salida = "<tree>$Version"
+$salida = Join-Path $Arbol "paquete-$Version"
 # AppxPackageValidationEnabled=false: la validación del paquete de MSBuild (target _ValidateAppxPackage) exige imágenes de
 # 200 KB como máximo (APPX3207, regla de la Tienda) y el arte del usuario a 1240x600 pesa más de 1 MB. Ni
 # AppxValidateAppxManifest=false ni SkipAppxManifestValidation=true la apagan: es otro target. La consola en modo
