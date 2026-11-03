@@ -2,6 +2,21 @@
 
 All notable changes to this recipe. Dates are `YYYY-MM-DD`.
 
+## 1.0.4 — 2026-11-03
+
+### Changed
+
+- **The opening paragraph still pointed at another repository of this catalogue.** 1.0.3 said this
+  repository had stopped explaining itself that way, and line 8 of both README files was still
+  doing it: it introduced the split between what is ours and what is not as "the same decision as
+  in" another port of ours, named outright. The sentence now states the thing itself, which is all
+  it ever carried. No other file in the tree named one.
+
+  Why 1.0.3 claimed zero and was wrong: that sweep looked for **links** to other repositories and
+  for **game names written in prose**, and this was neither — a repository name, with hyphens, in
+  running text. The check that found it compares the exact name of every other repository of the
+  catalogue against every text file of the tree.
+
 ## 1.0.3 — 2026-11-03
 
 ### Changed

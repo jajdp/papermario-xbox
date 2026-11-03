@@ -5,8 +5,8 @@ carries it on its `uwp-xbox` branch, and it works. What was missing was everythi
 branch and a package installed on a console: how to build it, how to get the tiles in, how to sign
 it, and what the console does that a desktop never does.
 
-That is what this repository is. It is the same decision as in `retro-rewind-xbox`: publish the
-half that is ours, and say plainly that the other half is not.
+That is what this repository is: publish the half that is ours, and say plainly that the other
+half is not.
 
 *(Español: [README.es.md](README.es.md))*
 

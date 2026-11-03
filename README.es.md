@@ -5,8 +5,8 @@ lo lleva en su rama `uwp-xbox`, y funciona. Lo que faltaba era todo lo que va en
 paquete instalado en una consola: cómo compilarlo, cómo meter los mosaicos, cómo firmarlo y qué
 hace la consola que un escritorio no hace nunca.
 
-Eso es este repositorio. Es la misma decisión que en `retro-rewind-xbox`: publicar la mitad que es
-nuestra y decir claramente que la otra no lo es.
+Eso es este repositorio: publicar la mitad que es nuestra y decir claramente que la otra no lo
+es.
 
 *(English: [README.md](README.md))*
 
